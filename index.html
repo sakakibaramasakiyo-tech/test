@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>みやざきスタンプラリー 2026</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">MIYAZAKI STAMP RALLY</p>
+        <h1>みやざき<br />スタンプラリー</h1>
+        <p class="period">開催期間: 2026年5月1日(金) 〜 5月30日(土)</p>
+        <p class="prize">
+          <span class="mango">🥭</span>
+          10箇所すべてを回ると<strong>宮崎産マンゴー1個</strong>プレゼント!
+        </p>
+        <div id="period-banner" class="period-banner" hidden></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="progress-section">
+        <div class="progress-head">
+          <h2>あつめたスタンプ</h2>
+          <p class="count">
+            <span id="collected">0</span> / <span id="total">10</span>
+          </p>
+        </div>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <div class="actions">
+          <button id="reset-btn" class="reset-btn" type="button">
+            スタンプをリセット
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">スポット一覧</h2>
+        <ul id="spot-list" class="spot-list"></ul>
+      </section>
+    </main>
+
+    <dialog id="prize-dialog" class="prize-dialog">
+      <div class="prize-content">
+        <div class="prize-mango">🥭</div>
+        <h2>コンプリートおめでとう!</h2>
+        <p>宮崎県10スポットを制覇しました。</p>
+        <p class="prize-ticket">
+          引換券コード: <strong id="prize-code"></strong>
+        </p>
+        <p class="note">
+          このコードを参加店舗で提示すると、<br />
+          宮崎産マンゴー1個と引き換えできます。<br />
+          (引換期限: 2026年6月15日)
+        </p>
+        <button id="close-dialog" type="button">とじる</button>
+      </div>
+    </dialog>
+
+    <footer>
+      <small>© 2026 みやざきスタンプラリー実行委員会 (デモ)</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
